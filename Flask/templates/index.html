@@ -1,0 +1,21 @@
+
+{% extends 'layout.html'  %}
+
+{% include 'includes/_navbar.html'  %}
+
+{% block body %} 
+
+  <div class="container" style="text-align: center;">
+
+      <h1>Image input</h1>
+
+      <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data" >
+          <label for="fileinp">Upload Image</label> 
+          <input type="file" id='fileinp' accept="image/*" name="files">  
+          <input type="submit">
+          </form>
+  </div>
+  
+
+
+{% endblock %}

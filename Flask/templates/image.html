@@ -1,0 +1,22 @@
+
+{% extends 'layout.html'  %}
+
+{% include 'includes/_navbar.html'  %}
+
+{% block body %} 
+
+  <div class="container" style="text-align: center;">
+    <h1>Image Uploaded</h1>
+    <!-- url_for() finds the path of the image directory  -->
+    <img src="{{ url_for('send_image', filename = image_name) }}" alt="" width="200px" height="200px"> 
+
+     <h4>{{image_name}}</h4> 
+
+
+     
+  </div>
+  
+
+
+
+{% endblock %}
