@@ -12,7 +12,7 @@ def index():
 @app.route('/upload',methods=['POST'])  #Post route to upload image
 def upload():
     target = os.path.join(app_route,"images/")   #Makes the path to insert new uploads
-    # print(target+'123')
+    # print(target+'12377')
 
     if not os.path.isdir(target):
         os.mkdir(target)   #If there is no image directory it creates one
